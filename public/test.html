@@ -1,0 +1,28 @@
+<html ng-app="mediaserver">
+
+<head>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="core.js"></script>
+</head>
+
+<body ng-controller="audioPlayer">
+	<h1> AUDIO PLAY </h1>
+	<ul>
+		<li ng-click="play()">PLAY</li>
+		<li ng-click="pause()">PAUSE</li>
+		<li ng-click="stop()">STOP</li>
+		<li ng-click="previous()">PREVIOUS</li>
+		<li ng-click="next()">NEXT</li>
+		<li ng-click="setVolume()">SET VOLUME</li>
+		<li ng-click="setSong()">SET SONG</li>
+
+		<li ng-click="updateLibrary()">UDPATE LIBRARY</li>
+
+		<form action="fileupload" method="get" enctype="multipart/form-data">
+			<input type="file" multiple="multiple" name="filetoupload"><br>
+			<input type="submit">
+		</form>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+html, body
+{
+	margin:0;
+	padding: 0;
+	height:100vh;
+	width:100vw;
+	overflow: hidden;
+}
+
+header
+{
+	position:relative;
+	float: top;
+	z-index: 2;
+	height:auto;
+	min-height: 30px;
+	background-color: #00FF00;
+	padding: 0;
+	margin: 0;
+}
+
+nav
+{
+	background-color: #FF0000;
+	position:absolute;
+	top:0px;
+	width:8vw;
+	height: 100vh;
+	display:flex;
+	flex-flow: column wrap;
+	z-index: 1;
+}
+
+.menuItem
+{
+	position:relative;
+	width: 100%;
+	border-style: solid;
+	border-width: 2px;
+	margin-bottom: 2px;
+}
+
+.menuItem:after
+{
+	display:block;
+	padding-bottom: 100%
+}
+
+.menuIcon
+{
+	margin: 10px;
+	max-width: 80%;
+}
